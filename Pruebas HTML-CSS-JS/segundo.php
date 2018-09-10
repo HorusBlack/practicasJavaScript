@@ -11,15 +11,15 @@
      <a href="index.php">Retornar</a>
      <br>
      <?php 
-          if(isset($_GET['nombre'])&& isset($_GET['edad'])){ 
-               $dato=$_GET['nombre'];
-               $edad=$_GET['edad'];
+          if(isset($_POST['nombre'])&& isset($_POST['edad'])){ 
+               $dato=$_POST['nombre'];
+               $edad=$_POST['edad'];
                echo $dato."> ".$edad;
           }else{
                echo 'Datos vacios';
           }
-          if(isset($_GET['cars'])){
-               $auto=$_GET['cars'];
+          if(isset($_POST['cars'])){
+               $auto=$_POST['cars'];
                echo '<br>'.$auto;
           }else{
                echo 'no se selecciono ningun auto';
