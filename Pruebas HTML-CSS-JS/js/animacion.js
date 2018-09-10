@@ -1,24 +1,41 @@
 // Code goes here
-
+/*
 $(document).ready(function(){
-  
      var boton_rut;
-     
      boton_rut = $('#formulario');
-     
      boton_rut.on('click', function(){
-       
-        var valor_input, valor_rut;
-       
+        var valor_input;
        valor_input = $('#rut_txt');
-       valor_rut = valor_input.val();
-       
-       if(valor_rut === ''){
-         alert('No tiene nada el input');
-       }else{
-          document.formulario1.submit(); 
+       if(valor_input.val()==="hola"){
        }
-       
      }); 
-     
    });
+   */
+
+$("#formulario").submit(function () {
+  if ($("#nombre").val().length < 1) {
+    alert("El nombre es obligatorio");
+    $('input:text').focus(
+      function () {
+        //$(this).css({'background-color' : '#784521'});
+        $(this).effect("highlight", { color: "#ff0000" }, 3000);
+      });
+    return false;
+  }else{
+    return true;
+  }
+});
+
+$("#formulario").submit(function () {
+  if ($("#nombre").val().length < 5) {
+    $('input:text').focus(
+      function () {
+        //$(this).css({'background-color' : '#794613'});
+        $(this).effect("highlight", { color: "#ff0000" }, 3000);
+      });
+    alert("El nombre debe tener como mínimo 5 caracteres");
+    return false;
+  }else{
+    return true;
+  }
+});  

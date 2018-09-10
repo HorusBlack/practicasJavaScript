@@ -8,6 +8,15 @@
 </head>
 <body>
      <h1>Segunda pagina</h1>
-     <a href="index.html">Retornar</a>
+     <a href="index.php">Retornar</a>
+     <br>
+     <?php 
+          if(isset($_GET['nombre'])){ 
+               $dato=$_GET['nombre'];
+               echo $dato;
+          }else{
+               echo 'Datos vacios';
+          }
+     ?>
 </body>
 </html>
