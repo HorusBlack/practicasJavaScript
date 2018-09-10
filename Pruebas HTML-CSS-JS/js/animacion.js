@@ -13,8 +13,8 @@ $(document).ready(function(){
    */
 
 $("#formulario").submit(function () {
-  if ($("#nombre").val().length < 1) {
-    alert("El nombre es obligatorio");
+  if (($("#nombre").val().length < 1)|| ($("#edad").val().length < 1)) {
+    alert("Debes llenar ambos campos");
     $('input:text').focus(
       function () {
         //$(this).css({'background-color' : '#784521'});
@@ -27,7 +27,7 @@ $("#formulario").submit(function () {
 });
 
 $("#formulario").submit(function () {
-  if ($("#nombre").val().length < 5) {
+  if (($("#nombre").val().length < 5)) {
     $('input:text').focus(
       function () {
         //$(this).css({'background-color' : '#794613'});

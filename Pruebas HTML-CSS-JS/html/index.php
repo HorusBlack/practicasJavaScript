@@ -8,11 +8,16 @@
 <body>
      <div>
           <form action="segundo.php" method="GET" id="formulario">
-               Rut:<input type="text" name="nombre" id="nombre">
+               Nombre:<input type="text" name="nombre" id="nombre">
+               Edad: <input type="text" name="edad" id="edad">
+               <select name="cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="audi">Audi</option>
+               </select>
                <input type="submit"> 
           </form>
-
-          <button id="btnEnviar">Verificar</button>
      </div>
      <p><a href="segundo.php" id="enlace">Segunda página</a></p>
    
