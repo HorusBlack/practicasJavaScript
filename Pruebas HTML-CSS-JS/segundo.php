@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <title>Document</title>
-</head>
-<body>
-     <h1>Segunda pagina</h1>
-     <a href="index.php">Retornar</a>
-     <br>
-     <?php 
+<?php 
           if(isset($_POST['nombre'])&& isset($_POST['edad'])){ 
                $dato=$_POST['nombre'];
                $edad=$_POST['edad'];
@@ -25,5 +13,18 @@
                echo 'no se selecciono ningun auto';
           }
      ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Document</title>
+</head>
+<body>
+     <h1>Segunda pagina</h1>
+     <a href="index.php">Retornar</a>
+     <br>
+    <p>valor recibido</p>
 </body>
 </html>
